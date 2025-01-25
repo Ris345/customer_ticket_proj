@@ -3,4 +3,11 @@ class TicketsController < ApplicationController
         @tickets = Ticket.all
         render json: @tickets
       end
+      def show
+        @tickets = Ticket.find(params[:id])
+      end
+    
+      def new
+        @tickets = Ticket.new
+      end
 end

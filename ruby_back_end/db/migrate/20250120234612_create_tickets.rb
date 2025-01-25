@@ -6,7 +6,6 @@ class CreateTickets < ActiveRecord::Migration[8.0]
       t.string :status
       t.string :priority
       t.string :user
-
       t.timestamps
     end
   end
